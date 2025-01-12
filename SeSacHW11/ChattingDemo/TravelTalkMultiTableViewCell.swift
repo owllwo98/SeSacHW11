@@ -13,6 +13,7 @@ class TravelTalkMultiTableViewCell: UITableViewCell {
     @IBOutlet var TravelTalkCollectionImageView: [UIImageView]!
     @IBOutlet var chatRoomNameLabel: UILabel!
     @IBOutlet var lastChatLabel: UILabel!
+    @IBOutlet var chatRoomDatelabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,6 +33,7 @@ class TravelTalkMultiTableViewCell: UITableViewCell {
         lastChatLabel.font = .systemFont(ofSize: 14, weight: .regular)
         lastChatLabel.textColor = .gray
         
+        chatRoomDatelabel.font = .systemFont(ofSize: 12, weight: .regular)
     }
     
     func configureMultiData(_ row: Int ) {
@@ -42,6 +44,8 @@ class TravelTalkMultiTableViewCell: UITableViewCell {
         chatRoomNameLabel.text = mockChatList[row].chatroomName
         
         lastChatLabel.text = mockChatList[row].chatList.last?.message
+
+        chatRoomDatelabel.text = mockChatList[row].chatList.last?.date.toDate()?.toDateDayString()
     }
     
 }

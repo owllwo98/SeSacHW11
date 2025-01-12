@@ -32,6 +32,10 @@
 		5E3284232D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3284212D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib */; };
 		5E3284262D33D3F100A5DC94 /* ChattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3284242D33D3F100A5DC94 /* ChattingTableViewCell.swift */; };
 		5E3284272D33D3F100A5DC94 /* ChattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3284252D33D3F100A5DC94 /* ChattingTableViewCell.xib */; };
+		5E32842A2D33EE4A00A5DC94 /* UserchattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3284282D33EE4A00A5DC94 /* UserchattingTableViewCell.swift */; };
+		5E32842B2D33EE4A00A5DC94 /* UserchattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3284292D33EE4A00A5DC94 /* UserchattingTableViewCell.xib */; };
+		5E32842E2D34167D00A5DC94 /* ChangeDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32842C2D34167D00A5DC94 /* ChangeDayTableViewCell.swift */; };
+		5E32842F2D34167D00A5DC94 /* ChangeDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E32842D2D34167D00A5DC94 /* ChangeDayTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,10 @@
 		5E3284212D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTalkMultiTableViewCell.xib; sourceTree = "<group>"; };
 		5E3284242D33D3F100A5DC94 /* ChattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTableViewCell.swift; sourceTree = "<group>"; };
 		5E3284252D33D3F100A5DC94 /* ChattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingTableViewCell.xib; sourceTree = "<group>"; };
+		5E3284282D33EE4A00A5DC94 /* UserchattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserchattingTableViewCell.swift; sourceTree = "<group>"; };
+		5E3284292D33EE4A00A5DC94 /* UserchattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserchattingTableViewCell.xib; sourceTree = "<group>"; };
+		5E32842C2D34167D00A5DC94 /* ChangeDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDayTableViewCell.swift; sourceTree = "<group>"; };
+		5E32842D2D34167D00A5DC94 /* ChangeDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeDayTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,10 @@
 				5E3284182D32597500A5DC94 /* TravelTalkTableViewCell.swift */,
 				5E3284192D32597500A5DC94 /* TravelTalkTableViewCell.xib */,
 				5E32841C2D32D06300A5DC94 /* ChattingViewController.swift */,
+				5E3284282D33EE4A00A5DC94 /* UserchattingTableViewCell.swift */,
+				5E3284292D33EE4A00A5DC94 /* UserchattingTableViewCell.xib */,
+				5E32842C2D34167D00A5DC94 /* ChangeDayTableViewCell.swift */,
+				5E32842D2D34167D00A5DC94 /* ChangeDayTableViewCell.xib */,
 			);
 			path = ChattingDemo;
 			sourceTree = "<group>";
@@ -208,6 +220,8 @@
 				5E3283E12D2E5FA300A5DC94 /* Assets.xcassets in Resources */,
 				5E32841B2D32597500A5DC94 /* TravelTalkTableViewCell.xib in Resources */,
 				5E3283DF2D2E5FA000A5DC94 /* Main.storyboard in Resources */,
+				5E32842B2D33EE4A00A5DC94 /* UserchattingTableViewCell.xib in Resources */,
+				5E32842F2D34167D00A5DC94 /* ChangeDayTableViewCell.xib in Resources */,
 				5E3284152D32576700A5DC94 /* Chatting.storyboard in Resources */,
 				5E3284232D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib in Resources */,
 				5E3284272D33D3F100A5DC94 /* ChattingTableViewCell.xib in Resources */,
@@ -233,9 +247,11 @@
 				5E32841D2D32D06400A5DC94 /* ChattingViewController.swift in Sources */,
 				5E3283DA2D2E5FA000A5DC94 /* SceneDelegate.swift in Sources */,
 				5E3284262D33D3F100A5DC94 /* ChattingTableViewCell.swift in Sources */,
+				5E32842A2D33EE4A00A5DC94 /* UserchattingTableViewCell.swift in Sources */,
 				5E3283F52D2E9ACF00A5DC94 /* GameViewController.swift in Sources */,
 				5E32841A2D32597500A5DC94 /* TravelTalkTableViewCell.swift in Sources */,
 				5E3283F32D2E6ADB00A5DC94 /* mapkitViewModel.swift in Sources */,
+				5E32842E2D34167D00A5DC94 /* ChangeDayTableViewCell.swift in Sources */,
 				5E3284012D2FC63B00A5DC94 /* UpDownGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

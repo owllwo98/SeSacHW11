@@ -57,6 +57,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="TravelTalkImageView" destination="xzd-O8-GrT" id="XG2-2p-i0t"/>
+                <outlet property="chatRoomDateLabel" destination="PI0-2W-hdW" id="eTP-2g-hzY"/>
                 <outlet property="chatRoomNameLabel" destination="T0a-lu-Rzm" id="mof-jy-cRR"/>
                 <outlet property="lastChatLabel" destination="0bT-We-OHq" id="PLK-bA-fzV"/>
             </connections>

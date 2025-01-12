@@ -40,3 +40,52 @@ func configureStartButton(_ startButton: UIButton,_ buttonString: String) {
     startButton.tintColor = .white
     startButton.backgroundColor = .black
 }
+
+extension Date {
+    func toDateHourString() -> String {
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone(abbreviation: "KST")
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.dateFormat = "HH:mm a"
+        let dateString = formatter.string(from: self)
+        return dateString
+    }
+    
+    func toDateDayString() -> String {
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone(abbreviation: "KST")
+        formatter.dateFormat = "yy.MM.dd"
+        let dateString = formatter.string(from: self)
+        return dateString
+    }
+    
+    func toDayString() -> String {
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone(abbreviation: "KST")
+        formatter.dateFormat = "dd"
+        let dateString = formatter.string(from: self)
+        return dateString
+    }
+    
+    
+    
+    
+}
+
+extension String {
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        formatter.timeZone = TimeZone(identifier: "KST")
+        formatter.locale = Locale(identifier: "ko_KR")
+        return formatter
+    }()
+    
+    func toDate() -> Date? {
+        let dateFormatter = Self.dateFormatter
+        guard let date = dateFormatter.date(from: self) else {
+            return nil
+        }
+        return date
+    }
+}

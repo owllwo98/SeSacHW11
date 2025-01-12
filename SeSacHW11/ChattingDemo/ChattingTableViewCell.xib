@@ -72,6 +72,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="Oed-nN-yhz"/>
             <connections>
+                <outlet property="chatDateLabel" destination="4Dl-ea-soI" id="Rgy-wQ-M6v"/>
                 <outlet property="chatImageView" destination="qNL-gH-QFE" id="AFu-U6-wOe"/>
                 <outlet property="chatMessageLabel" destination="JP6-nc-bLe" id="Z4w-BK-aVy"/>
                 <outlet property="chatProfileImageView" destination="wPe-td-19K" id="cFR-Fu-i0E"/>

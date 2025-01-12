@@ -20,6 +20,9 @@
                                 <rect key="frame" x="16" y="111" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="5xK-Qv-6iJ"/>
+                                </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f2e-KY-ulu">
                                 <rect key="frame" x="16" y="153" width="361" height="665"/>
@@ -41,6 +44,7 @@
                     <navigationItem key="navigationItem" title="TRAVEL TALK" id="4hi-SX-9de"/>
                     <connections>
                         <outlet property="TravelTalkTableView" destination="f2e-KY-ulu" id="aNf-wv-VKf"/>
+                        <outlet property="TravelTalkTextField" destination="CVo-ai-KeI" id="D0Z-QN-vre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

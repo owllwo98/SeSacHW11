@@ -13,6 +13,7 @@ class TravelTalkTableViewCell: UITableViewCell {
     @IBOutlet var TravelTalkImageView: UIImageView!
     @IBOutlet var chatRoomNameLabel: UILabel!
     @IBOutlet var lastChatLabel: UILabel!
+    @IBOutlet var chatRoomDateLabel: UILabel!
     
     
     
@@ -31,10 +32,13 @@ class TravelTalkTableViewCell: UITableViewCell {
         chatRoomNameLabel.font = .systemFont(ofSize: 14, weight: .semibold)
         lastChatLabel.font = .systemFont(ofSize: 14, weight: .regular)
         lastChatLabel.textColor = .gray
+        
+        chatRoomDateLabel.font = .systemFont(ofSize: 12, weight: .regular)
     }
     
     func configureData(_ row: Int) {
         lastChatLabel.text = mockChatList[row].chatList.last?.message
+        chatRoomDateLabel.text = mockChatList[row].chatList.last?.date.toDate()?.toDateDayString()
     }
     
     

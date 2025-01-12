@@ -9,6 +9,9 @@ import UIKit
 
 class TravelTalkViewController: UIViewController {
     @IBOutlet var TravelTalkTableView: UITableView!
+    @IBOutlet var TravelTalkTextField: UITextField!
+    
+    lazy var list: [ChatRoom] = mockChatList
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +23,32 @@ class TravelTalkViewController: UIViewController {
         
         navigationItem.backBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "back"), style: .plain, target: self, action: nil)
         navigationController?.navigationBar.tintColor = .black
+        
     }
-
+ 
+    @IBAction func textChanged(_ sender: UITextField) {
+        var result: [ChatRoom] = []
+        let trimText = sender.text?.trimmingCharacters(in: .whitespaces)
+        
+        if trimText == "" {
+            result = mockChatList
+        } else {
+            result = mockChatList.filter {
+                $0.chatList.contains {
+                    $0.user.rawValue.uppercased() == trimText?.uppercased()
+                }
+            }
+        }
+        
+        list = result
+        TravelTalkTableView.reloadData()
+    }
 }
 
 extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mockChatList.count
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,7 +57,7 @@ extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
         
         
         
-        if mockChatList[row].chatroomImage.count == 4 {
+        if list[row].chatroomImage.count == 4 {
             let multiXib = UINib(nibName: TravelTalkMultiTableViewCell.identifier, bundle: nil)
             TravelTalkTableView.register(multiXib, forCellReuseIdentifier: TravelTalkMultiTableViewCell.identifier)
             let cell = tableView.dequeueReusableCell(withIdentifier: TravelTalkMultiTableViewCell.identifier, for: indexPath) as! TravelTalkMultiTableViewCell
@@ -49,8 +70,8 @@ extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: TravelTalkTableViewCell.identifier, for: indexPath) as! TravelTalkTableViewCell
             
-            cell.TravelTalkImageView.image = UIImage(named: mockChatList[row].chatroomImage[0])
-            cell.chatRoomNameLabel.text = mockChatList[row].chatroomName
+            cell.TravelTalkImageView.image = UIImage(named: list[row].chatroomImage[0])
+            cell.chatRoomNameLabel.text = list[row].chatroomName
             cell.configureData(row)
         
             return cell
@@ -61,7 +82,8 @@ extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
         let sb = UIStoryboard(name: "Chatting", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "ChattingViewController") as! ChattingViewController
 
-        vc.contents = mockChatList[indexPath.row].chatroomName
+        vc.contents = list[indexPath.row].chatroomName
+        vc.list = list
         vc.index = indexPath.row
         
         self.navigationController?.pushViewController(vc, animated: true)

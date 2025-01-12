@@ -14,6 +14,7 @@ class ChattingTableViewCell: UITableViewCell {
     @IBOutlet var chatImageView: UIImageView!
     @IBOutlet var chatProfileNameLabel: UILabel!
     @IBOutlet var chatMessageLabel: UILabel!
+    @IBOutlet var chatDateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,10 +28,12 @@ class ChattingTableViewCell: UITableViewCell {
         chatImageView.contentMode = .scaleToFill
         chatImageView.layer.cornerRadius = chatImageView.frame.width / 5
         chatImageView.layer.borderWidth = 0.7
-        chatImageView.layer.borderColor = UIColor.black.cgColor
+        chatImageView.layer.borderColor = UIColor.lightGray.cgColor
+        
         chatMessageLabel.numberOfLines = 0
+        chatMessageLabel.font = .systemFont(ofSize: 16, weight: .regular)
         
-        
+        chatDateLabel.font = .systemFont(ofSize: 12, weight: .regular)
     }
     
     func configureData(row: Int) {

@@ -84,6 +84,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="chatRoomDatelabel" destination="TLX-JT-4Mn" id="NfB-tj-zfW"/>
                 <outlet property="chatRoomNameLabel" destination="2fG-Ua-sG9" id="Mev-ui-J5z"/>
                 <outlet property="lastChatLabel" destination="Rxn-pW-5Kl" id="WPL-75-ogv"/>
                 <outletCollection property="TravelTalkCollectionImageView" destination="gKi-x6-kyi" collectionClass="NSMutableArray" id="kAT-jX-CI3"/>
