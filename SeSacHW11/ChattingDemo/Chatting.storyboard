@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="1066.4122137404579" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Chatting View Controller-->
         <scene sceneID="vYJ-Ud-hOd">
             <objects>
-                <viewController id="820-nO-wih" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChattingViewController" id="820-nO-wih" customClass="ChattingViewController" customModule="SeSacHW11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ayg-xu-lxl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

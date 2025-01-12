@@ -27,6 +27,9 @@
 		5E3284172D32586C00A5DC94 /* TravelTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3284162D32586C00A5DC94 /* TravelTalkViewController.swift */; };
 		5E32841A2D32597500A5DC94 /* TravelTalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3284182D32597500A5DC94 /* TravelTalkTableViewCell.swift */; };
 		5E32841B2D32597500A5DC94 /* TravelTalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3284192D32597500A5DC94 /* TravelTalkTableViewCell.xib */; };
+		5E32841D2D32D06400A5DC94 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32841C2D32D06300A5DC94 /* ChattingViewController.swift */; };
+		5E3284222D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3284202D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.swift */; };
+		5E3284232D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3284212D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		5E3284162D32586C00A5DC94 /* TravelTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkViewController.swift; sourceTree = "<group>"; };
 		5E3284182D32597500A5DC94 /* TravelTalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkTableViewCell.swift; sourceTree = "<group>"; };
 		5E3284192D32597500A5DC94 /* TravelTalkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTalkTableViewCell.xib; sourceTree = "<group>"; };
+		5E32841C2D32D06300A5DC94 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		5E3284202D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkMultiTableViewCell.swift; sourceTree = "<group>"; };
+		5E3284212D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTalkMultiTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				5E3284142D32576700A5DC94 /* Chatting.storyboard */,
+				5E3284202D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.swift */,
+				5E3284212D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib */,
 				5E3284162D32586C00A5DC94 /* TravelTalkViewController.swift */,
 				5E3284182D32597500A5DC94 /* TravelTalkTableViewCell.swift */,
 				5E3284192D32597500A5DC94 /* TravelTalkTableViewCell.xib */,
+				5E32841C2D32D06300A5DC94 /* ChattingViewController.swift */,
 			);
 			path = ChattingDemo;
 			sourceTree = "<group>";
@@ -194,6 +203,7 @@
 				5E32841B2D32597500A5DC94 /* TravelTalkTableViewCell.xib in Resources */,
 				5E3283DF2D2E5FA000A5DC94 /* Main.storyboard in Resources */,
 				5E3284152D32576700A5DC94 /* Chatting.storyboard in Resources */,
+				5E3284232D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E3284032D2FCE8300A5DC94 /* Extension.swift in Sources */,
+				5E3284222D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.swift in Sources */,
 				5E3283FF2D2FC54E00A5DC94 /* StartGameViewController.swift in Sources */,
 				5E3284172D32586C00A5DC94 /* TravelTalkViewController.swift in Sources */,
 				5E3283EC2D2E653200A5DC94 /* Restaurant.swift in Sources */,
@@ -212,6 +223,7 @@
 				5E3284062D2FD0CC00A5DC94 /* UpDownCollectionViewCell.swift in Sources */,
 				5E3283DC2D2E5FA000A5DC94 /* ViewController.swift in Sources */,
 				5E3283D82D2E5FA000A5DC94 /* AppDelegate.swift in Sources */,
+				5E32841D2D32D06400A5DC94 /* ChattingViewController.swift in Sources */,
 				5E3283DA2D2E5FA000A5DC94 /* SceneDelegate.swift in Sources */,
 				5E3283F52D2E9ACF00A5DC94 /* GameViewController.swift in Sources */,
 				5E32841A2D32597500A5DC94 /* TravelTalkTableViewCell.swift in Sources */,
