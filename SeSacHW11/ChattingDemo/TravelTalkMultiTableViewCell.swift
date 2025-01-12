@@ -31,6 +31,7 @@ class TravelTalkMultiTableViewCell: UITableViewCell {
         chatRoomNameLabel.font = .systemFont(ofSize: 14, weight: .semibold)
         lastChatLabel.font = .systemFont(ofSize: 14, weight: .regular)
         lastChatLabel.textColor = .gray
+        
     }
     
     func configureMultiData(_ row: Int ) {
