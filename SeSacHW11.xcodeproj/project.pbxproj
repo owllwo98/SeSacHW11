@@ -134,21 +134,37 @@
 		5E3284132D32574600A5DC94 /* ChattingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5E3284312D3422BF00A5DC94 /* TravelTalkView */,
+				5E3284302D34229F00A5DC94 /* ChattingView */,
 				5E3284142D32576700A5DC94 /* Chatting.storyboard */,
-				5E3284242D33D3F100A5DC94 /* ChattingTableViewCell.swift */,
-				5E3284252D33D3F100A5DC94 /* ChattingTableViewCell.xib */,
-				5E3284202D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.swift */,
-				5E3284212D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib */,
-				5E3284162D32586C00A5DC94 /* TravelTalkViewController.swift */,
-				5E3284182D32597500A5DC94 /* TravelTalkTableViewCell.swift */,
-				5E3284192D32597500A5DC94 /* TravelTalkTableViewCell.xib */,
-				5E32841C2D32D06300A5DC94 /* ChattingViewController.swift */,
-				5E3284282D33EE4A00A5DC94 /* UserchattingTableViewCell.swift */,
-				5E3284292D33EE4A00A5DC94 /* UserchattingTableViewCell.xib */,
 				5E32842C2D34167D00A5DC94 /* ChangeDayTableViewCell.swift */,
 				5E32842D2D34167D00A5DC94 /* ChangeDayTableViewCell.xib */,
 			);
 			path = ChattingDemo;
+			sourceTree = "<group>";
+		};
+		5E3284302D34229F00A5DC94 /* ChattingView */ = {
+			isa = PBXGroup;
+			children = (
+				5E32841C2D32D06300A5DC94 /* ChattingViewController.swift */,
+				5E3284242D33D3F100A5DC94 /* ChattingTableViewCell.swift */,
+				5E3284252D33D3F100A5DC94 /* ChattingTableViewCell.xib */,
+				5E3284282D33EE4A00A5DC94 /* UserchattingTableViewCell.swift */,
+				5E3284292D33EE4A00A5DC94 /* UserchattingTableViewCell.xib */,
+			);
+			path = ChattingView;
+			sourceTree = "<group>";
+		};
+		5E3284312D3422BF00A5DC94 /* TravelTalkView */ = {
+			isa = PBXGroup;
+			children = (
+				5E3284162D32586C00A5DC94 /* TravelTalkViewController.swift */,
+				5E3284212D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.xib */,
+				5E3284202D33A6AA00A5DC94 /* TravelTalkMultiTableViewCell.swift */,
+				5E3284192D32597500A5DC94 /* TravelTalkTableViewCell.xib */,
+				5E3284182D32597500A5DC94 /* TravelTalkTableViewCell.swift */,
+			);
+			path = TravelTalkView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

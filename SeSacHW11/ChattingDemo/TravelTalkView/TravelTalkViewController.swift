@@ -24,6 +24,11 @@ class TravelTalkViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "back"), style: .plain, target: self, action: nil)
         navigationController?.navigationBar.tintColor = .black
         
+        TravelTalkTextField.placeholder = "친구 이름을 검색해보세요"
+        TravelTalkTextField.leftViewMode = .always
+        TravelTalkTextField.leftView = UIImageView(image: UIImage(systemName: "magnifyingglass"))
+        TravelTalkTextField.leftView?.tintColor = .gray
+        
     }
  
     @IBAction func textChanged(_ sender: UITextField) {

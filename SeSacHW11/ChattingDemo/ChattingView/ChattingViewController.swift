@@ -10,6 +10,8 @@ import UIKit
 class ChattingViewController: UIViewController {
     
     @IBOutlet var chattingTableView: UITableView!
+    @IBOutlet var chattingTextField: UITextField!
+    
     var contents: String?
     var index: Int?
     var list: [ChatRoom] = []
@@ -30,6 +32,10 @@ class ChattingViewController: UIViewController {
         let dayXib = UINib(nibName: ChangeDayTableViewCell.identifier, bundle: nil)
         chattingTableView.register(dayXib, forCellReuseIdentifier: ChangeDayTableViewCell.identifier)
         
+        chattingTextField.placeholder = "메세지를 입력하세요"
+        chattingTextField.rightViewMode = .always
+        chattingTextField.rightView = UIImageView(image: UIImage(systemName: "paperplane"))
+        chattingTextField.rightView?.tintColor = .lightGray
     }
 }
 
@@ -43,9 +49,9 @@ extension ChattingViewController: UITableViewDelegate, UITableViewDataSource {
         
         let userCell = tableView.dequeueReusableCell(withIdentifier: UserchattingTableViewCell.identifier, for: indexPath) as! UserchattingTableViewCell
         
-        let dayCell = tableView.dequeueReusableCell(withIdentifier: ChangeDayTableViewCell.identifier, for: indexPath) as! ChangeDayTableViewCell
-        
-        let calendar = Calendar.current
+//        let dayCell = tableView.dequeueReusableCell(withIdentifier: ChangeDayTableViewCell.identifier, for: indexPath) as! ChangeDayTableViewCell
+//        
+//        let calendar = Calendar.current
         
         if list[index ?? 0].chatList[indexPath.row].user.rawValue == "user" {
             userCell.userMessageLabel.text = list[index ?? 0].chatList[indexPath.row].message
